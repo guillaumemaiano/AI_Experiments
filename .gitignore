@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# Models (big binaries)
+models/**
+
+# Build artifacts
+build/**
+
+# Generated outputs
+outputs/**
+
+
+# External toolkits
+sd-scripts/
+
+hf_cache/**
+
+**/bak/**
