@@ -5,7 +5,7 @@ from pathlib import Path
 import re
 
 # --- Base SDXL model (you must download it once into this folder)
-base_model = "models/sdxl_base_1.0"
+base_model = "models/base/sdxl-base-1.0"
 
 # --- Your LoRA file
 lora_path = "models/style/"
@@ -46,7 +46,7 @@ image = pipe(
     guidance_scale=7.5,
     num_inference_steps=30,
     height=768,
-    width=1024
+    width=512
 ).images[0]
 
 image.save(outfile)
